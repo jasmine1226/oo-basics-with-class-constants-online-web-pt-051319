@@ -12,4 +12,9 @@ class Book
     puts "Flipping the page...wow, you read fast!"
   end
 
+  def genre=(genre)
+    @genre = genre
+    if GENRES.include?(genre) == false
+      GENRES << genre
+    end
 end
