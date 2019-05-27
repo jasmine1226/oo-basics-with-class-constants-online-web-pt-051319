@@ -17,4 +17,5 @@ class Book
     if GENRES.include?(genre) == false
       GENRES << genre
     end
+  end
 end
